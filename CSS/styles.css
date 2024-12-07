@@ -1,0 +1,235 @@
+/*================================
+            Global Rules
+================================*/
+
+body {
+    height: auto;
+    width: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    background: linear-gradient(green, yellow);
+    color: white;
+    font-size: 20px;
+}
+
+.background {
+    padding-bottom:22%;
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0px 0px 20px 4px black;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.links > nav > ul {
+    justify-content: center;
+    display: flex;
+}
+
+.links > nav > ul > li {
+    display: inline-block;
+}
+
+.links > nav > ul > li > a {
+    display:block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: linear .25s;
+}
+
+.links > nav > ul > li:first-of-type, li:nth-of-type(2) {
+    border-right: 2px solid white;
+}
+
+.links > nav > ul > li > a:hover {
+    background-color: rgb(82, 82, 82);
+    transition: linear .25s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/*================================
+            Main Page
+================================*/
+
+.maibody {
+    text-align: center;
+}
+
+.selfie {
+    border-top: 3px solid white;
+    padding-top: 15px;
+    max-width: 100%;
+    min-width: 300px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: flex;
+    box-shadow: 10px 10px 10px black;
+}
+
+.home > section {
+    max-width: 720px;
+    display: inline-block;
+    text-align: center;
+    min-width: 300px;
+}
+
+.home > section > p {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 720px;
+}
+
+/*================================
+            Portfolio
+================================*/
+
+.projects {
+    padding-top: 50px;
+    display: table-cell;
+    text-align: center;
+}
+
+.projects > div {
+    display: inline-table;   
+    text-align: center;
+    max-width: 20%;
+    min-width: 300px;
+    margin: 15px;
+    transform: scale(1);
+    filter: grayscale(1);
+    transition: linear 0.25s;
+}
+.projects > div > h2 {
+    margin: auto;
+    max-width: 360px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid white;
+}
+
+.projects > div > p {
+    margin: auto;
+    max-width: 300px;
+}
+
+.projects > div > figure > img {
+    max-width: 100%;
+    min-width: 300px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px black;
+    
+}
+
+.projects > div:hover {
+    transform: scale(1.25);
+    transition: linear 0.25s;
+    filter: grayscale(0);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/*================================
+            About Me
+================================*/
+
+.aboutbody > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+.aboutbody > article > section {
+    text-align: left;   
+    margin-top: 15px;
+    max-width: 720px;
+}
+.aboutbody > article > section > h2 {
+    margin-bottom: 15px;
+}
+.aboutbody > article > section > h3 {
+    border-bottom: 3px solid white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 15px;
+}
+.aboutbody > article > figure {
+    max-width: 720px;
+}
+.aboutbody > article > figure > img {
+    margin-top: 15px;
+    min-width: 300px;
+    max-width: 100%;
+    box-shadow: 10px 10px 10px black;
+    
+}
+.aboutbody > article > figure:nth-of-type(2),figure:nth-of-type(3){
+    border-top: 3px solid white;
+    margin-top: 15px;
+}
+
+.aboutbody > article > section:first-of-type,figure:nth-of-type(2),section:last-of-type{
+    margin: 15px;
+}
+.aboutbody > article > figure:first-of-type,section:nth-last-of-type(2),figure:last-of-type{
+    margin: 15px;
+}
+
+/*================================
+            Contact 
+================================*/
+
+
+.contact_box {
+    margin: auto;
+    min-width: 360px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+
+.contact_box > div {
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    padding: 25px;
+    min-width: 300px;
+    display: inline-block;
+}
+
+.contact_box > div > p {
+    margin-top: 55px;   
+}
+
+.contact_box > div > h4 {
+    font-size: 30px;
+}
+.contact_box > form > input,textarea{
+    margin: auto;   
+}
